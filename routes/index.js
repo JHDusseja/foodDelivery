@@ -5,7 +5,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    let url = "https://kgng8eutc9.execute-api.us-west-2.amazonaws.com/orders/new";
+    let url = "https://kgng8eutc9.execute-api.us-west-2.amazonaws.com/orders";
     axios
         .get(url)
         .then(response => {
